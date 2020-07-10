@@ -7,9 +7,7 @@ import android.util.Log;
 import com.bfcy.blogdemo.encrypt.CommonUtil;
 import com.bfcy.blogdemo.encrypt.DesUtil;
 
-
 public class EncryptActivity extends BaseActivity {
-
     /**
      * 源字符串
      */
@@ -45,8 +43,8 @@ public class EncryptActivity extends BaseActivity {
     private void testBase64() {
         String strEncode = Base64.encodeToString(sourceString.getBytes(), Base64.DEFAULT);
         String strDecode = new String(Base64.decode(strEncode, Base64.DEFAULT));
-        Log.i(TAG, "encrypt--Base64--加密后数据: " + strEncode);
-        Log.i(TAG, "encrypt--Base64--解密后数据: " + strDecode);
+        Log.i(TAG, "encrypt--Base64--编码后数据: " + strEncode);
+        Log.i(TAG, "encrypt--Base64--解码后数据: " + strDecode);
     }
 
     private void testMD5() {
